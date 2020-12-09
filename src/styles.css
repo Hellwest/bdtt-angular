@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* normalize */
-@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+
+html, body {
+  background-color: yellow;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

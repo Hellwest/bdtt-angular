@@ -1,8 +1,10 @@
 <div class="operators-list">
-  <div class="operator" *ngFor="let operator of operators">
-    <div>{{ operator.name }}</div>
-    <div class="image-container">
-      <img src="{{ operator.image }}" alt="{{ operator.alt }}" />
-    </div>
+  <div class="operator-card" *ngFor="let operator of operators">
+    <a [routerLink]="['operator/', operator.id]">
+      <div>{{ operator.name }}</div>
+      <div class="image-container">
+        <img src="{{ operator.image }}" alt="{{ operator.alt }}" />
+      </div>
+    </a>
   </div>
 </div>
