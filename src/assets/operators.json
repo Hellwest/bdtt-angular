@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "МТС",
+    "image": "/assets/images/mts-logo.png",
+    "alt": "MTS img"
+  },
+  {
+    "id": 2,
+    "name": "Beeline",
+    "image": "/assets/images/beeline-logo.png",
+    "alt": "Beeline img"
+  },
+  {
+    "id": 3,
+    "name": "Megafon",
+    "image": "/assets/images/megafon-logo.png",
+    "alt": "Megafon img"
+  }
+]
