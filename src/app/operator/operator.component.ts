@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { OperatorsService } from '../operators.service';
 import { IOperator } from '../types/operator.interface';
@@ -9,7 +9,6 @@ import { IOperator } from '../types/operator.interface';
   styleUrls: ['./operator.component.css']
 })
 export class OperatorComponent implements OnInit {
-  @Input() operatorId: number = 0
   operator?: IOperator
 
   constructor(
@@ -18,9 +17,9 @@ export class OperatorComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe((params) => {
+    this.route.queryParams.subscribe((params) => {
       this.operator = this.operatorsService.operators.find(
-        (operator) => operator.id === Number(params.get("operatorId"))
+        (operator) => operator.id === Number(params.id)
       )
     })
   }

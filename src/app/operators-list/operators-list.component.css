@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  height: 95vh;
 
   @media (max-width: 1350px) and (min-height: 560px) {
     flex-direction: column;

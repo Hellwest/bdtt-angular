@@ -9,7 +9,7 @@ import { IOperator } from '../types/operator.interface';
 })
 export class OperatorsListComponent implements OnInit {
   operators: IOperator[] = []
-  
+
   constructor(private operatorsService: OperatorsService) {}
 
   ngOnInit(): void {

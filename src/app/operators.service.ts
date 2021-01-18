@@ -8,10 +8,11 @@ import { IOperator } from './types/operator.interface';
 export class OperatorsService {
   operators: IOperator[] = []
   
-  constructor() {}
+  constructor() {
+    this.operators = operators
+  }
 
   getOperatorsList() {
-    this.operators = operators
     return this.operators
   }
 }
